@@ -14,6 +14,9 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="js/text-image.js"></script>
     <script src="js/demo.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -36,23 +39,23 @@
                         <option value="center">sredina</option>
                         <option value="right">desno</option>
                     </select>
+                </div><div style="display: inline-block;">
+                    <div class="form-group">
+                        <label>Visina retka:</label>
+                        <input name="line-height" type="number" step="0.1" value="1.2" />
+                        <select name="line-height-unit" style="display: none;">
+                            <option value="em">em</option>
+                            <option value="px">px</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="form-group"  style="display: inline-block;">
+                <br><div class="form-group"  style="display: inline-block;">
                         <label class="form-check-label">Podebljanje: <input name="bold" type="checkbox" /></label>
                     </div>
                     <div class="form-group"  style="display: inline-block;">
                         <label class="form-check-label">Kurziv: <input name="italic" type="checkbox" /></label>
                     </div>
-                <div style="display: inline-block;">
-                        <div class="form-group">
-                            <label>Visina retka:</label>
-                            <input name="line-height" type="number" step="0.1" value="1.2" />
-                            <select name="line-height-unit">
-                                <option value="em">em</option>
-                                <option value="px">px</option>
-                            </select>
-                        </div>
-                    </div>
+                
                     <br>
                 <div class="form-group" style="display: inline-block;">
                     <label>Boja slova:</label>
@@ -65,7 +68,7 @@
                     <input type="color" id="favcolor2" name="background-color" value="#FFFFFF">
 
 
-                    <label for="alpha">Prozirnost pozadine:</label>
+                    <label for="alpha">Popunjenost pozadine:</label>
                     <input type="range" id="alpha" name="alpha" min="0" max="1" step="0.01" value="0">
 
                     <input type="hidden" id="rgba-color" name="rgba-color" value="rgba(0, 0, 0, 1)">
@@ -90,7 +93,7 @@
                     </select>
                 </div>
                
-                <h2>Unesite tekst na glagoljici:</h2>
+                <h2>Unesite željeni tekst:</h2>
                 <textarea name="image-text" class="form-control" placeholder=""></textarea>
             </div>
             <div class="image-display text-center">

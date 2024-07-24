@@ -2,6 +2,6 @@
     font-family: 'FSGLA';
     src: url(fsgla.ttf);
   }
-
+body{font-family: Raleway, Arial, Helvetica, sans-serif;}
 form,textarea{width: 100%;}
 textarea{height: 400px;font-family: sans-serif!important;}
