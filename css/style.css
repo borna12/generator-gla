@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'FSGLA';
+    src: url(fsgla.ttf);
+  }
+
+form,textarea{width: 100%;}
+textarea{height: 400px;font-family: sans-serif!important;}
