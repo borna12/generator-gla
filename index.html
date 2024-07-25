@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html lang="hr">
-
 <head>
     <title>Stvori vlastiti tekst na glagoljici</title>
     <meta charset="utf-8" />
     <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script">
-    <link rel="stylesheet" type="text/css"
-        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="js/text-image.js"></script>
     <script src="js/demo.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/9b2be0a113.js" crossorigin="anonymous"></script>
 <script
   src="https://cdn.jsdelivr.net/npm/@iframe-resizer/child"
   type="text/javascript"
@@ -35,7 +31,7 @@
                 </div>
                 <div class="form-group" style="display: inline-block;">
                     <label>Veličina slova:</label>
-                    <input name="font-size" type="number" value="42" min="16" max="120" />
+                    <input name="font-size" type="number" value="42" min="16" max="120" style="width: 40px;"/>
                 </div>
                 <div class="form-group" style="display: inline-block;">
                     <label>Poravnanje:</label>
@@ -44,24 +40,24 @@
                         <option value="center">sredina</option>
                         <option value="right">desno</option>
                     </select>
-                </div><div style="display: inline-block;">
+                </div><div style="display: inline-block; margin-left: 5px;">
                     <div class="form-group">
                         <label>Visina retka:</label>
-                        <input name="line-height" type="number" step="0.1" value="1.2" />
+                        <input name="line-height" type="number" step="0.1" value="1.2" style="width: 40px;"/>
                         <select name="line-height-unit" style="display: none;">
                             <option value="em">em</option>
                             <option value="px">px</option>
                         </select>
                     </div>
                 </div>
-                <br><div class="form-group"  style="display: inline-block;">
+                <br><br><div class="form-group"  style="display: inline-block;">
                         <label class="form-check-label">Podebljanje: <input name="bold" type="checkbox" /></label>
                     </div>
                     <div class="form-group"  style="display: inline-block;">
                         <label class="form-check-label">Kurziv: <input name="italic" type="checkbox" /></label>
                     </div>
                 
-                    <br>
+                    <br><br>
                 <div class="form-group" style="display: inline-block;">
                     <label>Boja slova:</label>
                     <input type="color" id="favcolor" name="font-color" value="#000000s">
@@ -80,14 +76,14 @@
 
 
                 </div>
-                <br>
+                <br><br>
                 <div class="form-group" style="display: inline-block;">
                     <label>Debljina obruba:</label>
-                    <input name="stroke" type="number" value="0" min="0" />
+                    <input name="stroke" type="number" value="0" min="0" style="width: 40px;"/>
                 </div>
                 <div class="form-group" style="display: inline-block;">
                     <label>Boja obruba:</label>
-                <input type="color" id="favcolor3" name="stroke-color" value="#000000">
+                <input type="color" id="favcolor3" name="stroke-color" value="#A83343">
 
                 </div>
                 <div class="form-group" style="display: none;">
@@ -102,10 +98,9 @@
                 <textarea name="image-text" class="form-control" placeholder=""></textarea>
             </div>
             <div class="image-display text-center">
-                <p>  <a class="image-download btn btn-success"
-                        download="natpis.png" id="preuzmi" style="display: block;cursor: pointer;">preuzmi sliku</a></p>
+                <p>  <a class="image-download btn btn-success link_button"
+                        download="natpis.png" id="preuzmi" style="display: block;cursor: pointer;">preuzmi sliku <i class="fa fa-download"></i></a></p>
             </div>
-            
             
 
         </form>
