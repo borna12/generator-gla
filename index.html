@@ -28,9 +28,7 @@
 <body>
     <div class="container">
         <h1>Stvori vlastiti tekst na glagoljici</h1>
-        <p>Unesite tekst na latinici kako bi dobili njegovu transliteraciju na glagoljici. Glagoljični tekst možete
-            dodatno grafički uređivati te ga spremiti kao sliku u PNG formatu. Tu sliku dalje možete koristiti za
-            vlastite svrhe (npr. za dizajn i tiskanje na proizvode).</p>
+        <p>Unesite tekst na latinici kako biste dobili njegovu glagoljičnu transliteraciju. Dobiveni glagoljični tekst možete dodatno grafički uređivati te ga spremiti kao sliku u PNG formatu. Tom se slikom dalje možete koristiti u vlastite svrhe (npr. za dizajn i tiskanje na proizvode).</p>
         <form>
             <div class="form-group">
                 <div class="form-group" style="display: none">
@@ -45,11 +43,11 @@
                     <label class="form-check-label">Show grid line: <input name="grid-line" type="checkbox" /></label>
                 </div>
                 <div class="form-group" style="display: inline-block;">
-                    <label>Veličina slova:</label>
+                    <label>veličina slova:</label>
                     <input name="font-size" type="number" value="42" min="16" max="180" style="width: 40px;" />
                 </div>
                 <div class="form-group" style="display: inline-block;">
-                    <label>Poravnanje:</label>
+                    <label>poravnanje:</label>
                     <select name="font-align">
                         <option selected value="left">lijevo</option>
                         <option value="center">sredina</option>
@@ -58,7 +56,7 @@
                 </div>
                 <div style="display: inline-block; margin-left: 5px;">
                     <div class="form-group">
-                        <label>Visina retka:</label>
+                        <label>visina retka:</label>
                         <input name="line-height" type="number" step="0.1" value="1.2" style="width: 40px;" />
                         <select name="line-height-unit" style="display: none;">
                             <option value="em">em</option>
@@ -68,25 +66,24 @@
                 </div>
                 <br><br>
                 <div class="form-group" style="display: inline-block;">
-                    <label class="form-check-label">Podebljanje: <input name="bold" type="checkbox" /></label>
+                    <label class="form-check-label">podebljanje: <input name="bold" type="checkbox" /></label>
                 </div>
                 <div class="form-group" style="display: inline-block;">
-                    <label class="form-check-label">Kurziv: <input name="italic" type="checkbox" /></label>
+                    <label class="form-check-label">kurziv: <input name="italic" type="checkbox" /></label>
                 </div>
-
                 <br><br>
                 <div class="form-group" style="display: inline-block;">
-                    <label>Boja slova:</label>
+                    <label>boja slova:</label>
                     <input type="color" id="favcolor" name="font-color" value="#000000s">
 
 
                 </div>
                 <div class="form-group" style="display: inline-block;">
-                    <label>Boja pozadine:</label>
+                    <label>boja pozadine:</label>
                     <input type="color" id="favcolor2" name="background-color" value="#FFFFFF">
 
 
-                    <label for="alpha">Popunjenost pozadine:</label>
+                    <label for="alpha">popunjenost pozadine:</label>
                     <input type="range" id="alpha" name="alpha" min="0" max="1" step="0.01" value="0">
 
                     <input type="hidden" id="rgba-color" name="rgba-color" value="rgba(0, 0, 0, 1)">
@@ -95,11 +92,11 @@
                 </div>
                 <br><br>
                 <div class="form-group" style="display: inline-block;">
-                    <label>Debljina obruba:</label>
+                    <label>debljina obruba:</label>
                     <input name="stroke" type="number" value="0" min="0" style="width: 40px;" />
                 </div>
                 <div class="form-group" style="display: inline-block;">
-                    <label>Boja obruba:</label>
+                    <label>boja obruba:</label>
                     <input type="color" id="favcolor3" name="stroke-color" value="#A83343">
 
                 </div>
@@ -111,7 +108,7 @@
                     </select>
                 </div>
 
-                <h2>Unesite željeni tekst:</h2>
+                <h2>unesite željeni tekst:</h2>
                 <textarea name="image-text" class="form-control" placeholder=""></textarea>
             </div>
             <div class="image-display text-center">
