@@ -33,7 +33,14 @@
             vlastite svrhe (npr. za dizajn i tiskanje na proizvode).</p>
         <form>
             <div class="form-group">
-
+                <div class="form-group" style="display: none">
+                    <label>Tip jezika:</label>
+                    <select name="jezik" id="jezik">
+                        <option value="suvrmeni" selected>suvremeni hrvatski</option>
+                        <option value="crkvenoslavenski">crkvenoslavenski</option>
+                    </select>
+                </div>
+                <br><br>
                 <div class="form-group" style="display: none;">
                     <label class="form-check-label">Show grid line: <input name="grid-line" type="checkbox" /></label>
                 </div>
@@ -117,7 +124,7 @@
         <hr>
 
     </div>
-
+<p>Ovaj sadržaj izrađen je u sklopu projekta <a href="https://stin.hr/sadrzaj/digistin/">DigiSTIN</a>.</p>
 </body>
 <script>
     const colorInput = document.getElementById('favcolor2');
@@ -146,6 +153,8 @@
 
     // Initial display update
     updateColorDisplay();
+
+
 </script>
 
 </html>

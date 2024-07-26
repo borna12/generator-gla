@@ -137,8 +137,20 @@ function updateImage() {
                 form.querySelector('select[name="line-height-unit"]').value,
             bold: form.querySelector('input[name="bold"]').checked,
             italic: form.querySelector('input[name="italic"]').checked
-        },
-        message = textarea.value.toLowerCase();
+        }
+        if(document.getElementById('jezik').value == "crkvenoslavenski") 
+        {
+            message = textarea.value.toLowerCase().replace(/ ja/g, " ;").replace(/ je/g, " e").replace(/ije/g, ";").replace(/je/g, ";");
+            if (message.slice(0, 2)=="ja"){
+                message=message.replace("ja",";")
+            }
+            else if (message.slice(0, 2)=="je"){
+                message=message.replace("je","e")
+            }
+        }
+        else{
+            message = textarea.value.toLowerCase()
+        }
     if (!message) {
         codeExample.innerHTML = imageDisplay.innerHTML = '';
         codeExample.style.display = 'none';
